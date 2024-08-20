@@ -9,7 +9,6 @@
 
 body {
   height: 100vh;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -88,12 +87,6 @@ button {
 .footer {
   justify-content: center;
   align-items: center;
-}
-
-.content,
-.info,
-.quote,
-.register {
   flex: 1;
 }
 
@@ -103,6 +96,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  flex: 1;
 }
 
 .info-header {
@@ -140,7 +134,64 @@ button {
 
 .quote {
   background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  padding: 0px 160px;
+  gap: 50px;
 }
  
+.quote .text {
+  font-size: 36px;
+  font-weight: light;
+  font-style: italic;
+  color: #1f2937;
+  margin-top: 150px;
+}
 
+.thor {
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 150px;
+}
+
+.register {
+  flex: 1;
+  padding: 0px 150px;
+}
+
+.register-container {
+  background-color: #3882f6;
+  margin: 150px 0px;
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  border-radius: 16px;
+}
+
+.register .title{
+  font-size: 24px;
+}
+
+.register .subtext {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.register .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.sign {
+  color: #f9faf8;
+  font-weight: bold;
+  border: 2px solid #f9faf8;
+  border-radius: 8px;
+  padding: 8px 45px;
+  margin-left: auto;
+}
 
